@@ -1,0 +1,88 @@
+*{
+    margin: 0 px;
+    padding: 0 px;
+    box-sizing: border-box;
+}
+
+body{
+   
+    background-color:#ccc;
+}
+
+.container{
+    max-width:600px;
+    margin: 0 auto;
+
+}
+.text{
+    font-size: 20px;
+}
+label{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+input,select,textarea{
+    padding: 7px 12px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    font-size: 16px;
+}
+.box{
+    max-width:600px;
+    padding: 25px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top :60px;
+    border-radius: 5px;
+}
+.textarea-control{
+    grid-column: 1 /span 2;
+}
+
+.textarea-control textarea{
+    width: 100%;
+}
+
+.form-controls{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,225px));
+    gap: 10px;
+    margin-top: 20px;
+}
+.form-script{
+    display: flex;
+    flex-direction: column;
+}
+input:focus{
+    outline-color:rgba(255, 0, 0, 0.547);
+}
+.btn-apply{
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+button{
+    padding: 10px 20px;
+    background-color: red;
+    border:1px solid white;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    transition: all 0,4s ease-in;
+}
+
+button:hover{
+    background-color: grey;
+    color: #fff;
+    cursor: pointer;
+    border:1px solid black;
+    transition: all 0.4s ease ease-out;
+}
+
+@media (max-width:550px){
+    .textarea-control{
+    grid-column: 1/span 1;
+    }
+}
+
+
